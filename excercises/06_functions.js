@@ -44,17 +44,6 @@ console.log(validateInteger(60));
 // A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros.
 // En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).
 
-function isInteger(a, b) {
-    if (!Number.isInteger(a)) {
-        alert('Error: ' + a + ' is not an integer');
-        return parseInt(a, 10);
-    }
-    else if (!Number.isInteger(b)) {
-        alert('Error: ' + b + ' is not a integer');
-        return parseInt(b, 10);
-    }
-}
-
 function sum3(a, b) {
     if (isNaN(a)) {
         alert('Error: ' + a + ' is not a number');
@@ -64,8 +53,16 @@ function sum3(a, b) {
         alert('Error: ' + b + ' is not a number');
         return b;
     }
+    else if (!validateInteger(a)) {
+        alert('Error: ' + a + ' is not an integer');
+        return parseInt(a, 10);
+    }
+    else if (!validateInteger(b)) {
+        alert('Error: ' + b + ' is not a integer');
+        return parseInt(b, 10);
+    }
     else {
-        isInteger(a, b);
+        return a + b;
     }
 }
 
@@ -89,8 +86,7 @@ function validateNumber(a, b) {
 }
 
 function sum(a, b) {
-    validateNumber(a, b);
-    return result;
+    return validateNumber(a, b);
 }
 
 console.log(sum(3, 'cinco'));
