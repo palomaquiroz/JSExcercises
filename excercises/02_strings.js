@@ -11,8 +11,8 @@ var elAnimale = 'Alexis Lionel Maximiliano Pucheta';
 var elAnimaleName = elAnimale.substring(0, 5);
 console.log(elAnimaleName);
 
-// Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula
-// y las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).
+// Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los últimos 3 caracteres
+// guardando el resultado en una nueva variable (utilizar substring).
 
 var radiumString = 'Radium Rocket';
 var radiumSub = radiumString.substring(10, 13);
