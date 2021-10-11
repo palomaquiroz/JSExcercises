@@ -28,8 +28,18 @@ In this repo, you'll find:
 You can download the project from this repository and open the 'index.html' file on your browser or you can access it clicking on its [GithubPage](https://palomaquiroz.github.io/JSExcercises/).  
 To see the resolutions in the console of the browser you should open the DevTools by right-clicking anywhere in the page and selecting 'Inspect' or by clicking Ctrl + Shift + I.
 
-### Last week project corrections
-To see the last week project's corrections, please visit the GithubPage of the project clicking [here](https://palomaquiroz.github.io/RocketNewsProject/)
+## Last week project corrections
+
+#### Corrections made
+* Modified the navigation menu for avoiding wrapping as screen gets smaller.
+* Correct width values of images in index.html (as errors were shown using HTML validator).
+* Used CSS W3C validator.
+* Separated media queries for desktop version (created desktop.css file).
+* Correct indentation errors.
+* Changed classes and ids names. Used '-' for separating words instead of Camel case.
+
+To see the last week project's corrections, please visit the GithubPage of the project clicking [here](https://palomaquiroz.github.io/RocketNewsProject/)  
 You can also see the repository clicking [here](https://github.com/palomaquiroz/RocketNewsProject)
+
 
 And that's it! 😄
