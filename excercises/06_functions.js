@@ -47,11 +47,11 @@ console.log(validateInteger(60));
 function sum3(a, b) {
     if (isNaN(a)) {
         alert('Error: ' + a + ' is not a number');
-        return a;
+        return NaN;
     }
     else if (isNaN(b)) {
         alert('Error: ' + b + ' is not a number');
-        return b;
+        return NaN;
     }
     else if (!validateInteger(a)) {
         alert('Error: ' + a + ' is not an integer');
@@ -68,7 +68,7 @@ function sum3(a, b) {
 
 console.log(sum3(2.9, 3));
 
-// Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.
+// Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.
 
 function validateNumber(a, b) {
     if (isNaN(a)) {
@@ -76,12 +76,19 @@ function validateNumber(a, b) {
         return NaN;
     }
     else if (isNaN(b)) {
-        alert ('Error: ' + b + ' is not a number');
+        alert('Error: ' + b + ' is not a number');
         return NaN;
     }
+    else if (!validateInteger(a)) {
+        alert('Error: ' + a + ' is not an integer');
+        return parseInt(a, 10);
+    }
+    else if (!validateInteger(b)) {
+        alert('Error: ' + b + ' is not a integer');
+        return parseInt(b, 10);
+    }
     else {
-        var result = a + b;
-        return result;
+        return a + b;
     }
 }
 
